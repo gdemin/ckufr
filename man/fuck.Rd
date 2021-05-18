@@ -13,7 +13,7 @@ shit()
 invisible character - text of the last error
 }
 \description{
-Just type 'fuck' or 'shit' in the console and we will google for you...
+Just type 'fuck' or 'shit' in the console just after the error and we will google for you...
 }
 \examples{
 \dontrun{
