@@ -1,6 +1,6 @@
 #' Search last error in Google
 #'
-#' Just type 'fuck' or 'shit' in the console and we will google for you...
+#' Just type 'fuck' or 'shit' in the console just after the error and we will google for you...
 #' @return invisible character - text of the last error
 #' @export
 #'
@@ -12,7 +12,7 @@
 fuck = function() {
     curr_error = eval(quote(trimws(geterrmessage())), envir = .GlobalEnv)
     cat("Searching the error '", curr_error, "'...\n", sep = "")
-    browseURL(paste0("https://www.google.com/search?q=R ", curr_error))
+    utils::browseURL(paste0("https://www.google.com/search?q=R ", curr_error))
     invisible(curr_error)
 }
 
