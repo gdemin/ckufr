@@ -13,6 +13,7 @@ devtools::install_github("gdemin/ckufr")
 Just type 'fuck' or 'shit' in the console just after the error and we will google for you...
 
 ```R
+library(ckufr)
 stop("my strange error")
 fuck
 ```
