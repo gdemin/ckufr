@@ -3,11 +3,14 @@
 \name{fuck}
 \alias{fuck}
 \alias{shit}
+\alias{oh}
 \title{Search last error in Google}
 \usage{
 fuck()
 
 shit()
+
+oh()
 }
 \value{
 invisible character - text of the last error

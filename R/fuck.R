@@ -24,6 +24,14 @@ class(fuck) = union("call_me", class(fuck))
 shit = fuck
 
 #' @export
+#' @rdname fuck
+oh = fuck
+
+#' @export
 print.call_me = function(x, ...){
     invisible(x())
+}
+
+.onAttach = function(...){
+    packageStartupMessage("For better googling experience set error messages language to English with Sys.setlocale(\"LC_MESSAGES\", \"C\")")
 }
